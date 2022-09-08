@@ -309,6 +309,41 @@ ItalianChef italianChef = new ItalianChef();
 italianChef.MakePasta;
 */
 
+//**************************** STRINGS ******************************************
+
+/*
+using System.Globalization;
+
+string textString = " this sdl fjsL JLJ LKJ LKJ KLJLKJ LKJLKJlkjlk";
+TextInfo currentTextInfo = CultureInfo.CurrentCulture.TextInfo;
+TextInfo englishTextInfo = new CultureInfo("en-us", false).TextInfo;
+Console.WriteLine(textString.ToLower());
+*/
+/*
+using System.Globalization;
+
+string TextString = "Qais";
+for (int i = 0; i < TextString.Length; i++)
+{
+    Console.WriteLine(TextString[i]);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -543,47 +578,141 @@ for (int i = 0; i < greetings.Length; i++)
 }
 */
 
-/* Skapa ett program med en array som innehåller strängarna “noll”, “ett”, “två”, “tre”, “fyra”, “fem”, “sex”, “sju”, “åtta”, “nio”.
+
+
+/* 11 Skapa ett program med en array som innehåller strängarna “noll”, “ett”, “två”, “tre”, “fyra”, “fem”, “sex”, “sju”, “åtta”, “nio”.
  Be sedan användaren att mata in en siffra. Använd arrayen för att skriva ut siffrans ord. Ex. Inmatning “3” => “tre”.
 
 Extra utmaning: Användaren kan mata in en sträng med fritt antal siffror, om man skriver in t.ex 432 så svarar programmet: “fyra-tre-två”.
-
 */
+
 /*
 string[] siffror = new string[10]{ "noll", "ett", "två", "tre", "fyra", "fem", "sex", "sju", "åta", "nio" };
-Console.ReadLine();
 
-for (i = 0; i < )
+
+for (int i = 0; i < 10; i++)
 {
-    
 }
-
+Console.WriteLine(siffror[1]);
 */
 
-/*
-Fråga användaren hur många tal den vill mata in. 
+
+
+
+/* 12  Fråga användaren hur många tal den vill mata in. 
 Fråga sedan efter talen i tur och ordning (“Ange tal 1:” osv). När alla tal är inmatade skriv ut dem i omvänd ordning.
-
 */
 
-/* Be användaren mata in en text. Skriv sedan ut texten baklänges.*/
+
+
+
+
+
+
+
+
+
+
+
+// 13 Be användaren mata in en text. Skriv sedan ut texten baklänges.   varför kom den här using microsoft ?? ********************************
+
 /*
 using Microsoft.VisualBasic;
 
 Console.WriteLine("Mata in ett text: ");
 
 string input = Console.ReadLine();
-
 Console.WriteLine(Strings.StrReverse(input));
 */
+
+
+
 
 /* Be användaren mata in en text. Skriv ut texten med alla vokaler ersatta med *
 
 Extra utmaning: Skriv ut texten översatt till rövarspråket.*/
 
+using System.Linq.Expressions;
+using System.Threading.Channels;
+using Microsoft.VisualBasic;
 
 
 
+
+
+
+// 15 Ett palindrom är ett ord som blir samma framlänges som baklänges.
+// Be användaren skriva in ett ord och ange sedan om det är ett palindrom eller inte. *****************************************
+
+/*
+
+Console.WriteLine("Skriv in ett ord! ");
+string pal = Console.ReadLine();
+
+Console.WriteLine(Strings.StrReverse(pal));
+string lap = pal;
+
+while (pal == lap)
+{
+    return true;
+}
+
+*/
+
+
+
+
+
+
+//  Gör om uppgift 6 så man kan mata in allt på en rad (första talet, operator, andra talet).
+// Ignorera inmatade mellanslag i strängen. Om man t.ex. matar in strängen “34 - 14”, så ska programmet skriva ut “= 20”.
+
+/*
+int results = 0;
+Console.WriteLine("mata in ditt tal: ");
+int num1 = Convert.ToInt32(Console.Read());
+char op = Convert.ToChar(Console.Read());
+int num2 = Convert.ToInt32(Console.Read());
+int sum = 0;
+/*
+ 
+/*
+if (op = "+")
+{
+    Console.WriteLine(num1 * num2);
+}
+
+
+*/
+
+
+/*
+switch (op)
+{
+    case '+':
+        results = num1 + num2;
+        Console.WriteLine(results);
+        break;
+    case '-':
+        results = num1 - num2;
+        Console.WriteLine(results);
+    case '/':
+        results = num1 / num2;
+        Console.WriteLine(results);
+    case '*':
+        results = num1 * num2;
+        Console.WriteLine(results);
+}
+
+*/
+
+
+
+// Gör ett program som ber användaren mata in en text.
+// Be sedan användaren mata in en sträng som är en del av den första texten.
+// Skriv ut hela texten med den del man angav markerad i en annan färg.
+// Ex. Användare matar in “abcdefghijklmnopqrstuvxyz”, och sedan “defg”.
+// Programmet ska då skriva ut: abcdefghijklmnopqrstuvxyz
 
 
 
